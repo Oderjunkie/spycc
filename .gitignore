@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# transpiled tests
+tests/*.exe
+tests/*.wasm
+tests/*.wast
+tests/*.wat
+tests/*.cc
+tests/*.c++
+tests/*.cxx
+tests/*.cpp

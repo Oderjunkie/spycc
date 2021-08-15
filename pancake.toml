@@ -1,0 +1,12 @@
+[py_implementation] # Data about the python3 implementation details.
+dict_type = 'std::unordered_map' # NOTE: unordered dicts are faster [O(1) vs O(n)],
+                                 # if you need ordered dicts, use `OrderedDict`.
+                                 # if you *must* make normal dicts ordered, replace
+                                 # `'std::unordered_map'` with `'std::map'`.
+
+[py_cc_translation] # Data about the python3 to c++ assumptions. See PEP 8 for most of the explanations.
+
+# https://www.python.org/dev/peps/pep-0008/#id47
+private_prefix = '__' # To avoid name clashes with subclasses, use two leading underscores to invoke Python's name mangling rules.
+protected_prefix = '_' # Use one leading underscore only for non-public methods and instance variables.
+public_prefix = '' # Public attributes should have no leading underscores.
